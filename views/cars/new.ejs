@@ -9,13 +9,13 @@
     <h1>Create a Car Doc</h1>
     <form action="/cars" method="POST">
       <label for="make">Make</label>
-      <input type="text" name="make" id="make" />
+      <input type="text" name="make" id="make" required />
       <label for="model">Model</label>
-      <input type="text" name="model" id="model" />
+      <input type="text" name="model" id="model" required />
       <label for="year">Year</label>
-      <input type="number" name="year" id="year" />
+      <input type="number" name="year" id="year" required />
       <label for="vin">Vin</label>
-      <input type="text" name="vin" id="vin" />
+      <input type="text" name="vin" id="vin" required />
       <button type="submit">Add Car</button>
     </form>
   </body>
