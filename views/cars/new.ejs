@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Car</title>
+  </head>
+  <body>
+    <h1>Create a Car Doc</h1>
+    <form action="/cars" method="POST">
+      <label for="make">Make</label>
+      <input type="text" name="make" id="make" />
+      <label for="model">Model</label>
+      <input type="text" name="model" id="model" />
+      <label for="year">Year</label>
+      <input type="number" name="year" id="year" />
+      <label for="vin">Vin</label>
+      <input type="text" name="vin" id="vin" />
+      <button type="submit">Add Car</button>
+    </form>
+  </body>
+</html>
