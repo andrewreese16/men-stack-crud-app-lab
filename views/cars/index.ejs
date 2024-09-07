@@ -9,13 +9,14 @@
     <h1>All Cars</h1>
     <ul>
       <% carDocs.forEach(car => { %>
-      <li><%= car.make %></li>
+      <li><strong>Make: </strong><%= car.make  %></li>
       <br />
-      <li><%= car.model %></li>
+      <li><strong>Model: </strong><%= car.model %></li>
       <br />
-      <li><%= car.year %></li>
+      <li><strong>Year: </strong><%= car.year %></li>
       <br />
-      <li><%= car.vin %></li>
+      <li><strong>Vin: </strong><%= car.vin %></li>
+      <br />
       <% }) %>
     </ul>
   </body>
