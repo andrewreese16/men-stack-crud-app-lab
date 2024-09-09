@@ -4,19 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>All Cars</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
   </head>
   <body>
     <h1>All Cars</h1>
     <ul>
       <% carDocs.forEach(car => { %>
-      <li><strong>Make: </strong><%= car.make  %></li>
-      <br />
-      <li><strong>Model: </strong><%= car.model %></li>
-      <br />
-      <li><strong>Year: </strong><%= car.year %></li>
-      <br />
-      <li><strong>Vin: </strong><%= car.vin %></li>
-      <br />
+      <li>
+        <a href="/cars/<%= car._id %>"
+          ><strong>Make: </strong><%= car.make %></a
+        >
+      </li>
       <% }) %>
     </ul>
   </body>
