@@ -9,11 +9,13 @@
   <body>
     <%- include('../partials/nav') %>
     <h1>All Cars</h1>
+    <a href="/cars/new" class="create">Create a Car</a>
     <ul>
       <% carDocs.forEach(car => { %>
       <li>
         <a href="/cars/<%= car._id %>"
-          ><strong>Model: </strong><%= car.model.toUpperCase() %></a
+          ><strong>Model: </strong><%= car.model.toUpperCase() %>
+          <strong>Year:</strong> <%= car.year %></a
         >
       </li>
       <% }) %>
