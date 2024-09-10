@@ -12,7 +12,7 @@
       <% carDocs.forEach(car => { %>
       <li>
         <a href="/cars/<%= car._id %>"
-          ><strong>Make: </strong><%= car.make %></a
+          ><strong>Model: </strong><%= car.model.toUpperCase() %></a
         >
       </li>
       <% }) %>
