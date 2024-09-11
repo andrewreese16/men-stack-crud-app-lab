@@ -51,7 +51,7 @@ router.post("/sign-up", async function (req, res) {
   const hashPassword = bcrypt.hashSync(req.body.password, 10);
   req.body.password = hashPassword;
   const userDoc = await UserModel.create(req.body);
-  res.redirect("/");
+  res.redirect("/"); 
 });
 
 module.exports = router;
